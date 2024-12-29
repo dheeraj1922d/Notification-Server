@@ -2,7 +2,6 @@ spring:
   profiles:
     active: dev
 
-#kafka integration
   kafka:
     consumer:
       auto-offset-reset: earliest
@@ -17,11 +16,3 @@ spring:
       bootstrap-servers: localhost:29092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-
-
-#  mongodb config for subscriber database
-  data:
-    mongodb:
-      uri: mongodb+srv://dhiraj_123:i2R517lUNn1CPBSa@cluster0.15zztmy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-      database: subscriberdb
-      auto-index-creation : true
